@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="30dp"
+            android:hint="Title"
+            android:textColorHint="#F2F2F2"
+            android:inputType="text"
+            android:maxLength="30"
+            />
+
+        <TextView
+            android:id="@+id/headDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTitle"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:text="Description"
+            android:textColor="@color/secondary_text"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headDescription"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edittextbg"
+            android:hint="This is an example of the description inside the card view."
+            android:maxLength="250"
+            android:padding="10dp"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:text=""/>
+
+            <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/250"
+            />
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_addNote"
+        android:layout_width="235dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="buttonClick"
+        android:tag="ADD"
+        android:text="ADD NOTE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="235dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="buttonClick"
+        android:text="Update"
+        app:layout_constraintBottom_toTopOf="@+id/button_addNote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

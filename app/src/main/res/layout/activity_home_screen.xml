@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+    android:background="#ffffff">
+
+        <ImageView android:id="@+id/imageMindful"
+            android:layout_height="300dp"
+            android:layout_width="300dp"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_mindful_foreground"/>
+
+        <TextView
+            android:id="@+id/textMindful1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageMindful"
+            android:layout_centerHorizontal="true"
+            android:text="A more mindful you"
+            android:textColor="#222222"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textMindful2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textMindful1"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="monospace"
+            android:text="building your meditation experience"
+            android:textSize="16sp"
+            android:typeface="serif" />
+
+        <ImageButton android:id="@+id/buttonSignOut"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/textMindful2"
+            android:src="@drawable/ic_sign_out_foreground"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#ffffff" />
+
+</RelativeLayout>

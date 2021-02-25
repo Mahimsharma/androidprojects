@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".LogInActivity">
+
+    <ImageView android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_yoga"
+        android:layout_above="@+id/textMeditation"/>
+
+    <TextView
+        android:id="@+id/textMeditation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonGoogleSignIn"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingHorizontal="60dp"
+        android:text="Make meditation a habit you love"
+        android:textAlignment="center"
+        android:textColor="#111111"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonGoogleSignIn"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_above="@id/buttonContinueAsGuest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonmainactivity"
+        android:text="Continue with Google" />
+
+    <Button android:id="@+id/buttonContinueAsGuest"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/textDisclaimer"
+        android:layout_centerHorizontal="true"
+        android:text="Continue as Guest"
+        android:background="@drawable/buttonmainactivity"/>
+
+    <TextView android:id="@+id/textDisclaimer"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
+        android:paddingHorizontal="60dp"
+        android:text="By creating an account you agree to our Terms of Service &amp; Privacy Policy"
+        android:textSize="12sp"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

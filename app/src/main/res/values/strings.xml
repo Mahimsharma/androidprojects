@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Form</string>
+    <string name="name">Enter name</string>
+    <string name="button">SUBMIT</string>
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="display_Input">Your Input</string>
+    <string name="display_name">Name</string>
+    <string name="display_number">Mobile Number</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_welcoming_signup">WelcomingSignup</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <!--    <string name="default_web_client_id">406825133086-odavqg9d79l8hkaflcsvcdgic585ov2o.apps.googleusercontent.com</string>-->
+
+
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF">
+    <ImageButton android:id="@+id/buttonBack"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:backgroundTint="#ffffff"/>
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonBack"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:ems="8"
+        android:fontFamily="sans-serif-black"
+        android:text="Hi, what do your friends call you?"
+        android:textColor="#022222"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <EditText android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textWelcome"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="22dp"
+        android:textColor="#555555"
+        android:textStyle="bold"
+        android:text="Mahim Joseph"
+        android:layout_marginHorizontal="35dp"
+        android:focusedByDefault="true"/>
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="150dp"
+        android:layout_below="@+id/editName"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonmainactivity"
+        android:text="Continue"/>
+
+
+
+</RelativeLayout>

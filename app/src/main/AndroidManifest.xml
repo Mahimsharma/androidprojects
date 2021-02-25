@@ -22,7 +22,8 @@
         <activity android:name=".LogInActivity" />
         <activity
             android:name=".RegistrationActivity"
-            android:parentActivityName=".LogInActivity" />
+            android:parentActivityName=".LogInActivity"
+            android:windowSoftInputMode="stateVisible" />
 
         <activity android:name=".HomeScreen"
             android:parentActivityName=".LogInActivity"/>
